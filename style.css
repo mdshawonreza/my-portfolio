@@ -174,7 +174,14 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  
 }
+
+.section__pic-container-img{
+  border-radius: 50%;
+  width: 400px;
+}
+
 
 .section__text {
   align-self: center;
@@ -340,6 +347,12 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+ 
+}
+.article-container-img {
+  height: 200px;
+  width: 340px;
+  border-radius: 20px;
 }
 
 article {
