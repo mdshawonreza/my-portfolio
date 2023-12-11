@@ -434,12 +434,31 @@ article .icon {
 }
 
 /* FOOTER SECTION */
+.footer-section {
+  background-color: black;
+  
+}
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
+  margin:  rem;
+  
+  
 }
+
+/* #footer-navLink1{
+  color: white;
+} */
 
 footer p {
   text-align: center;
+  color: white;
+}
+footer ul>li {
+  text-align: center;
+  color: white;
+}
+footer ul{
+ padding-top: 3rem;
+ padding-bottom: 2rem;
 }
