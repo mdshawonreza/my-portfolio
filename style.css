@@ -60,8 +60,16 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-weight: 500;
 }
 
+.nav-logo{
+  width: 320px;
+}
+
+#nav-logo-small{
+  width: 220px;
+}
 .logo:hover {
   cursor: default;
 }
