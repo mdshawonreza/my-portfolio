@@ -10,6 +10,7 @@
   #projects {
     height: fit-content;
   }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,6 +46,15 @@
   .about-containers {
     margin-top: 0;
   }
+  .project-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    max-width: 900px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -53,7 +63,7 @@
     height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: 60vh;
     margin-bottom: 0;
   }
   article {
@@ -68,6 +78,7 @@
   .btn-container {
     flex-wrap: wrap;
   }
+ 
   .contact-info-container {
     margin: 0;
   }
@@ -100,4 +111,93 @@
   .text-container {
     text-align: justify;
   }
+  .project-containers {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 columns */
+    max-width: 400px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    margin-left: -11px;
+  }
 }
+
+
+
+
+
+
+.big-circle {
+    
+  position: relative;
+  
+  border-radius: 50%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  animation: Rotate 20s linear infinite;
+  -webkit-animation: Rotate 20s linear infinite;
+}
+.circle2 {
+  
+  position: relative;
+  
+  border-radius: 50%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  animation: Rotate 20s linear infinite;
+  -webkit-animation: Rotate 20s linear infinite;
+}
+
+.big-circle {
+  animation: Rotate 30s linear infinite;
+}
+.circle2{
+  animation: Rotated-reverse 30s linear infinite;
+}
+
+
+.curve-image{
+  
+  background-size:560px 560px ;
+   background-repeat: no-repeat;
+  background-position: center;
+                       
+
+}
+
+
+
+  /* .bg-light{
+    background-size:1700px 700px ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: soft-light;
+  } */
+
+  @keyframes Rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes Rotated-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(-360deg);
+    }
+  }

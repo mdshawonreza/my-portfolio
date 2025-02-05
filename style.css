@@ -297,7 +297,15 @@ section {
 .about-details-container {
   display: flex;
 }
-
+.project-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  max-width: 1200px;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+}
 .about-pic {
   border-radius: 2rem;
 }
